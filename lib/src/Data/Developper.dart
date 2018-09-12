@@ -1,29 +1,32 @@
-class Developper
+abstract class Developper
 {
   //The price of the developper in LineOfCode
   double _price;
 
-  //The number of LineOfCode produced by the Developper
+  //The number of LineOfCode produced by the Developper per seconds
   double _productivity;
 
-  //Programming Language
-  String _language;
+  //Name
+  String _name;
 
-  //The amount of LineOfCode produced this the creation
+  //Description of the Developper
+  String _description;
+
+  //The amount of LineOfCode produced since the creation
   double _gain;
 
-  //Multiplier bonus
-  int _bonus;
+  //The current level of the Developper
+  int _level;
 
   //==========GETTER AND SETTER==========//
-  int get bonus
+  String get description
   {
-    return _bonus;
+    return _description;
   }
 
-  set bonus(int value)
+  set description(String value)
   {
-    _bonus = value;
+    _description = value;
   }
 
   double get gain
@@ -36,14 +39,22 @@ class Developper
     _gain = value;
   }
 
-  String get language
+  int get level
+  => _level;
+
+  set level(int value)
   {
-    return _language;
+    _level = value;
   }
 
-  set language(String value)
+  String get name
   {
-    _language = value;
+    return _name;
+  }
+
+  set name(String value)
+  {
+    _name = value;
   }
 
   double get price
@@ -65,5 +76,32 @@ class Developper
   {
     _productivity = value;
   }
-//=====================================//
+
+  //=====================================//
+
+  //==========METHODS==========//
+  double computeNextBuyingPrice();
+
+  double computeNextUpgradePrice();
+
+  String toString()
+  {
+    String resStr = "Developper : \n";
+    resStr += "\tName = $_name\n";
+    resStr += "\tDescription = $_description\n";
+    resStr += "\tLevel = $_level\n";
+    resStr += "\tPrice = $_price\n";
+    resStr += "\tProductivity = $_productivity LinesOfCode per Sec\n";
+    resStr += "\tGain = $_gain LinesOfCode\n";
+
+    return resStr;
+  }
+
+  void upgrade()
+  {
+    level++;
+  }
+//============================//
+
+
 }
