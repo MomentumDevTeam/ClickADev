@@ -1,8 +1,13 @@
 
 <h1>Game</h1>
 <hr>
-<div>
     You are producing {{getCurrentLinesPerSeconds()}} lines of code per seconds<br>
-    You have {{getCurrentLinesOfCode()}} lines of code
+    You have {{getCurrentLinesOfCode()}} lines of code<br>
 
-</div>
+<!-- tmp display for click zone -->
+
+<material-fab raised (trigger) = "addLinesFromClick()"
+              id="click-button"
+              aria-label="add lines from click">
+    <material-icon icon="attach_money"></material-icon>
+</material-fab>

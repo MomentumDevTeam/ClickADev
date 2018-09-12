@@ -2,13 +2,14 @@
 
 import 'dart:async';
 
-import '../config/config.dart' as config;
+import 'package:clickADev/src/localclass/config/config.dart' as config;
 
 class Game {
 
   ///   var initialization
   List<dynamic> buildingList = [];
   double _linesOfCode = 40.0;
+  double _linesOfCodePerClick = 1.4;
   double _linesPerSeconds = 2.5;
 
   /// CONSTRUCTORS
@@ -48,6 +49,13 @@ class Game {
   setLinesPerSeconds(double linesPerSeconds) {
     this._linesPerSeconds = linesPerSeconds;
   }
+
+  double get linesPerClick => this._linesOfCodePerClick;
+
+  void set linesPerClick(double linesPerClick) => this._linesOfCodePerClick = linesPerClick;
+
+  void addLinesFromClick() => this._linesOfCode += this.linesPerClick;
+
 
   /// MAIN LOGIC HERE
   /// digest will be called every tick
