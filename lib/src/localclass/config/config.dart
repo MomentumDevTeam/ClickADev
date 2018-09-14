@@ -1,3 +1,3 @@
 /// Author : Alexi Coard
 
-const tickDuration = Duration(seconds: 1);
+const Duration tickDuration = Duration(seconds: 1);
