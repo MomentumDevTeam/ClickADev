@@ -45,7 +45,7 @@ class NumberFormatPipe extends PipeTransform {
 
     //If before 1 000 , return as it is
     if (value < 1000) {
-      return '$value';
+      return '${value.toStringAsFixed(1)}';
     }
     //Do no format before
     if (value >= 1000000) {
