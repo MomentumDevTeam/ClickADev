@@ -21,7 +21,7 @@ class HTMLDevelopper extends Developper
   String toString()
   {
     // TODO: implement toString
-    return super.toString();
+    return "HTML " + super.toString();
   }
 
   @override
@@ -29,5 +29,6 @@ class HTMLDevelopper extends Developper
   {
     // TODO: implement upgrade
     super.upgrade();
+    this.productivity *= this.level * 1.3;
   }
 }

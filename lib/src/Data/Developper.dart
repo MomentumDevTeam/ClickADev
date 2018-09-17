@@ -100,9 +100,6 @@ abstract class Developper
   void upgrade()
   {
     level++;
-    productivity *= level * 1.3;
   }
 //============================//
-
-
 }
