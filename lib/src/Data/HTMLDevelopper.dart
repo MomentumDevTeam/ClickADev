@@ -2,10 +2,24 @@ import 'package:clickADev/src/Data/Developper.dart';
 
 class HTMLDevelopper extends Developper
 {
+
+  //==========CONSTRUCTOR==========//
+  HTMLDevelopper({String name:"Bob",String description:"Default Description",double price:10.0,double productivity:2.0,double gain:0.0,int level:1})
+  {
+    this.name = name;
+    this.description = description;
+    this.price=price;
+    this.productivity=productivity;
+    this.gain=gain;
+    this.level=level;
+  }
+  //=============================//
+
+
   @override
   double computeNextBuyingPrice()
   {
-    // TODO: Do the math :D
+    // TODO: Do the math !
     return (this.price * 1.5);
   }
 
