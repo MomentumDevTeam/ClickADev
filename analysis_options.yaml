@@ -1,4 +1,8 @@
 analyzer:
+  plugins:
+    - angular
+  strong-mode:
+    implicit-casts: false
   exclude: [build/**]
   errors:
     uri_has_not_been_generated: ignore
@@ -16,4 +20,8 @@ linter:
     - list_remove_unrelated_type
     - test_types_in_equals
     - unrelated_type_equality_checks
-    - valid_regexps
+    - valid_regexps 
+    - avoid_empty_else
+    - close_sinks
+    - unnecessary_const
+    - unnecessary_new
