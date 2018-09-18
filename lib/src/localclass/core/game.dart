@@ -8,7 +8,7 @@ class Game {
 
   ///   var initialization
   List<dynamic> buildingList = [];
-  double _linesOfCode = 40.0;
+  double _linesOfCode = 0.1;
   double _linesOfCodePerClick = 1.4;
   double _linesPerSeconds = 2.5;
 
