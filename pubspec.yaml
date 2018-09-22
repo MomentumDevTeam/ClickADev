@@ -11,7 +11,7 @@ dependencies:
   angular: ^5.0.0
   angular_components: ^0.9.0
   angular_forms: ^2.0.0
-  bootstrap_sass: any
+  bootstrap_sass: ^4.1.2
 
 dev_dependencies:
   angular_test: ^2.0.0
