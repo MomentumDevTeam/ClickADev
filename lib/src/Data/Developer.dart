@@ -1,21 +1,21 @@
-abstract class Developper
+abstract class Developer
 {
-  //The price of the developper in LineOfCode
+  //The price of the developer in LineOfCode
   double _price;
 
-  //The number of LineOfCode produced by the Developper per seconds
+  //The number of LineOfCode produced by the Developer per seconds
   double _productivity;
 
   //Name
   String _name;
 
-  //Description of the Developper
+  //Description of the Developer
   String _description;
 
   //The amount of LineOfCode produced since the creation
   double _gain;
 
-  //The current level of the Developper
+  //The current level of the Developer
   int _level;
 
   //==========GETTER AND SETTER==========//
@@ -86,7 +86,7 @@ abstract class Developper
 
   String toString()
   {
-    String resStr = "Developper : \n";
+    String resStr = "Developer : \n";
     resStr += "\tName = $_name\n";
     resStr += "\tDescription = $_description\n";
     resStr += "\tLevel = $_level\n";

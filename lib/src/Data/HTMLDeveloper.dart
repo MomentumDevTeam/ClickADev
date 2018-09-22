@@ -1,10 +1,10 @@
-import 'package:clickADev/src/Data/Developper.dart';
+import 'package:clickADev/src/Data/Developer.dart';
 
-class HTMLDevelopper extends Developper
+class HTMLDeveloper extends Developer
 {
 
   //==========CONSTRUCTOR==========//
-  HTMLDevelopper({String name:"Bob",String description:"Default Description",double price:10.0,double productivity:2.0,double gain:0.0,int level:1})
+  HTMLDeveloper({String name:"Bob",String description:"Default Description",double price:10.0,double productivity:2.0,double gain:0.0,int level:1})
   {
     this.name = name;
     this.description = description;
