@@ -84,6 +84,8 @@ abstract class Developer
 
   double computeNextUpgradePrice();
 
+  String getImageUrl();
+
   String toString()
   {
     String resStr = "Developer : \n";

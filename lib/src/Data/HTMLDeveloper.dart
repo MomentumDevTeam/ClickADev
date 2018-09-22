@@ -45,4 +45,9 @@ class HTMLDeveloper extends Developer
     super.upgrade();
     this.productivity *= this.level * 1.3;
   }
+
+  String getImageUrl()
+  {
+    return 'assets/images/developers/html5.svg';
+  }
 }
