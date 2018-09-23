@@ -7,8 +7,8 @@ import 'package:clickADev/src/localclass/core/game.dart';
 import 'package:clickADev/src/pipes/number_format.dart';
 
 import 'package:clickADev/src/components/developer/developer_component.dart';
-import 'package:clickADev/src/Data/HTMLDeveloper.dart';
-import 'package:clickADev/src/Data/Developer.dart';
+import 'package:clickADev/src/localclass/developer/html_developer.dart';
+import 'package:clickADev/src/localclass/developer/developer.dart';
 
 @Component(
     selector: 'game',

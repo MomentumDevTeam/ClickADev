@@ -4,7 +4,7 @@ import 'package:angular_components/angular_components.dart';
 
 import 'package:clickADev/src/pipes/number_format.dart';
 import 'package:clickADev/src/components/icons/currency_component.dart';
-import 'package:clickADev/src/Data/Developer.dart';
+import 'package:clickADev/src/localclass/developer/developer.dart';
 
 @Component(
     selector: 'developer',

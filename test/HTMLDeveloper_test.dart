@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:clickADev/src/Data/HTMLDeveloper.dart';
+import 'package:clickADev/src/localclass/developer/html_developer.dart';
 
 
 void main()

@@ -1,4 +1,4 @@
-import 'package:clickADev/src/Data/Developer.dart';
+import 'package:clickADev/src/localclass/developer/developer.dart';
 
 class HTMLDeveloper extends Developer
 {
