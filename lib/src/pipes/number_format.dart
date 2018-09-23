@@ -22,7 +22,7 @@ class NumberFormatPipe extends PipeTransform {
 
   final formatLong=[' thousand',' million',' billion',' trillion',' quadrillion',' quintillion',' sextillion',' septillion',' octillion',' nonillion'];
   final longPrefixes=['','un','duo','tre','quattuor','quin','sex','septen','octo','novem'];
-  final longSuffixes=['decillion','vigintillion','trigintillion','quadragintillion','quinquagintillion','sexagintillion','septuagintillion','octogintillion','nonagintillion'];
+  final longSuffixes=[' decillion',' vigintillion',' trigintillion',' quadragintillion',' quinquagintillion',' sexagintillion',' septuagintillion',' octogintillion',' nonagintillion'];
   var formatShort=[' k',' M',' B',' T',' Qa',' Qi',' Sx',' Sp',' Oc',' No'];
   var shortPrefixes=['','Un','Do','Tr','Qa','Qi','Sx','Sp','Oc','No'];
   var shortSuffixes=['D','V','T','Qa','Qi','Sx','Sp','O','N'];

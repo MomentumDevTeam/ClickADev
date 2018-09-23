@@ -43,7 +43,7 @@ class HTMLDeveloper extends Developer
   {
     // TODO: implement upgrade
     super.upgrade();
-    this.productivity *= this.level * 1.3;
+    this.productivity *= 1.03;
   }
 
   String getImageUrl()

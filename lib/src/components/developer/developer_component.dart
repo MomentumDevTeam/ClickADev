@@ -3,6 +3,7 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 
 import 'package:clickADev/src/pipes/number_format.dart';
+import 'package:clickADev/src/components/icons/currency_component.dart';
 import 'package:clickADev/src/Data/Developer.dart';
 
 @Component(
@@ -11,7 +12,8 @@ import 'package:clickADev/src/Data/Developer.dart';
     directives: [
       MaterialFabComponent,
       MaterialIconComponent,
-      coreDirectives
+      coreDirectives,
+      CurrencyComponent,
     ],
     providers: [
       materialProviders,
@@ -22,4 +24,6 @@ import 'package:clickADev/src/Data/Developer.dart';
 class DeveloperComponent {
   @Input()
   Developer developer;
+
+
 }
