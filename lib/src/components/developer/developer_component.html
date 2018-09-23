@@ -1,4 +1,4 @@
-<div class="c-developer row u-align-items-center">
+<div class="c-developer row u-align-items-center" [ngClass]= "{'u-disabled': disabled}">
     <div class="col-sm-2">
         <img class="img-responsive c-developer__image hidden-xs" src="{{developer.getImageUrl()}}" alt="{{developer.name}}">
     </div>

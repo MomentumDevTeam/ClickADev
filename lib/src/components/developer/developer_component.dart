@@ -25,5 +25,6 @@ class DeveloperComponent {
   @Input()
   Developer developer;
 
-
+  @Input()
+  bool disabled = true;
 }

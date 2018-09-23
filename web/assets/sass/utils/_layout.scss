@@ -13,3 +13,9 @@
 .u-align-items-center {
     align-items: center;
 }
+
+
+.u-disabled {
+    cursor: default !important;
+    background-color: $lightgray !important;
+}
