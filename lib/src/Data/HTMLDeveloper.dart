@@ -4,7 +4,7 @@ class HTMLDeveloper extends Developer
 {
 
   //==========CONSTRUCTOR==========//
-  HTMLDeveloper({String name:"Bob",String description:"Default Description",double price:10.0,double productivity:2.0,double gain:0.0,int level:1})
+  HTMLDeveloper({String name:"Html dev",String description:"Is this even a language ?",double price:10.0,double productivity:2.0,double gain:0.0,int level:1})
   {
     this.name = name;
     this.description = description;
