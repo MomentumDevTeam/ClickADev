@@ -18,4 +18,5 @@
 .u-disabled {
     cursor: default !important;
     background-color: $lightgray !important;
+    transition: background-color 300ms ease;
 }
