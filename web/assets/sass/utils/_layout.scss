@@ -1,0 +1,22 @@
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden-xs {
+    display: none;
+    @media(min-width: $screen-sm-min) {
+        display: initial;
+    }
+}
+
+.u-align-items-center {
+    align-items: center;
+}
+
+
+.u-disabled {
+    cursor: default !important;
+    background-color: $lightgray !important;
+    transition: background-color 300ms ease;
+}

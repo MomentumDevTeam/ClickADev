@@ -1,10 +1,10 @@
-import 'package:clickADev/src/Data/Developper.dart';
+import 'package:clickADev/src/localclass/developer/developer.dart';
 
-class HTMLDevelopper extends Developper
+class HTMLDeveloper extends Developer
 {
 
   //==========CONSTRUCTOR==========//
-  HTMLDevelopper({String name:"Bob",String description:"Default Description",double price:10.0,double productivity:2.0,double gain:0.0,int level:1})
+  HTMLDeveloper({String name:"Html dev",String description:"Is this even a language ?",double price:10.0,double productivity:2.0,double gain:0.0,int level:1})
   {
     this.name = name;
     this.description = description;
@@ -43,6 +43,11 @@ class HTMLDevelopper extends Developper
   {
     // TODO: implement upgrade
     super.upgrade();
-    this.productivity *= this.level * 1.3;
+    this.productivity *= 1.03;
+  }
+
+  String getImageUrl()
+  {
+    return 'assets/images/developers/html5.svg';
   }
 }

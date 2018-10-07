@@ -1,0 +1,26 @@
+.c-developer {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid $lightblue;
+    background-color: rgba($lightblue, 0.2);
+    transition: background-color 300ms ease;
+    cursor: pointer;
+}
+
+.c-developer__label {
+    font-size: 32px;
+    color: rgba(black, 0.6);
+    font-weight: bold;
+}
+
+.c-developer__level {
+    font-size: 40px;
+    color: rgba(black, 0.6);
+    font-weight: bold;
+    float: right;
+}
+
+.c-developer__image {
+    max-width: 70px;
+    vertical-align: middle;
+}

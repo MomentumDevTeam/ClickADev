@@ -1,16 +1,16 @@
 import 'package:test/test.dart';
-import 'package:clickADev/src/Data/HTMLDevelopper.dart';
+import 'package:clickADev/src/localclass/developer/html_developer.dart';
 
 
 void main()
 {
-  group("HTMLDevelopper Unit Test : ", ()
+  group("HTMLDeveloper Unit Test : ", ()
   {
-    group("HTMLDevelopper Constructor : ", ()
+    group("HTMLDeveloper Constructor : ", ()
     {
-      test("Default Constructor .HTMLDevelopper() : ", ()
+      test("Default Constructor .HTMLDeveloper() : ", ()
       {
-        var dev = new HTMLDevelopper();
+        var dev = new HTMLDeveloper();
         expect(dev.name, "Bob");
         expect(dev.description, "Default Description");
         expect(dev.price, 10.0);
@@ -20,11 +20,11 @@ void main()
       });
       //TODO : If you have motivation test the others constructors
     });
-    group ("HTMLDevelopper Methods : ", ()
+    group ("HTMLDeveloper Methods : ", ()
     {
       test(".upgrade() : ", ()
       {
-        var dev = new HTMLDevelopper();
+        var dev = new HTMLDeveloper();
         dev.upgrade();
         expect(dev.level, 2);
         expect(dev.productivity, 5.2);
@@ -42,7 +42,7 @@ void main()
       });
       test(".computeNextBuyingPrice() : ", ()
       {
-        var dev = new HTMLDevelopper();
+        var dev = new HTMLDeveloper();
         expect(dev.computeNextBuyingPrice(), 15);
         dev.price = 3218.06873;
         expect(dev.computeNextBuyingPrice(), 4827.103095);
@@ -51,7 +51,7 @@ void main()
       });
       test(".computeNextUpgradePrice() : ", ()
       {
-        var dev = new HTMLDevelopper();
+        var dev = new HTMLDeveloper();
         expect(dev.computeNextUpgradePrice(),12.5);
         dev.upgrade();
         expect(dev.computeNextUpgradePrice(), 25);

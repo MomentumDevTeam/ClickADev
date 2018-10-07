@@ -1,0 +1,21 @@
+<div class="c-developer row u-align-items-center" [ngClass]= "{'u-disabled': disabled}">
+    <!-- TODO : On hover, card to display description and stuff -->
+    <div class="col-sm-2">
+        <img class="img-responsive c-developer__image hidden-xs" src="{{developer.getImageUrl()}}" alt="{{developer.name}}">
+    </div>
+    <div class="col-11 col-sm-9 c-developer__content">
+        <div class="c-developer__label">
+            {{developer.name}}
+        </div>
+        <div class="c-developer__price">
+            <currency></currency>
+            <!--TODO : remove productivity when card hover is ready -->
+            {{developer.price | numberFormat: 'short'}} - (+ {{developer.productivity | numberFormat: 'short'}} per second)
+        </div>
+    </div>
+    <div class="col-1 col-sm-1">
+        <span class="c-developer__level">
+            {{developer.level}}
+        </span>
+    </div>
+</div>

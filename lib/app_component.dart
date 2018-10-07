@@ -9,7 +9,9 @@ import 'src/components/game/game_component.dart';
   selector: 'clickadev-app',
   styleUrls: ['app_component.css'],
   templateUrl: 'app_component.html',
-  directives: [GameComponent],
+  directives: [
+    GameComponent
+  ],
 )
 class AppComponent {
 
